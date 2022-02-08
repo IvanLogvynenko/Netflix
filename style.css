@@ -1,0 +1,102 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(fonts/BebasNeue-Regular.ttf);
+  }
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.picture{
+    display: block;
+    margin: auto;
+    transition: 1s;
+    width: 100%;
+}
+.picture.active{
+    width: 50%;
+    opacity: 0.5;
+}
+#starter{
+    width: 75%;
+    margin: auto;
+    margin-bottom:0%;
+    margin-top: 65%;
+}
+#starter.display{
+    display: none;
+}
+#starter:hover{
+    cursor: pointer;
+}
+.starter_text{
+    background-color: red;
+    font-size: 75px;
+    font-family: BebasNeue;
+    color: wheat;
+    text-align: center;
+    border-radius: 75px;
+}
+#films{
+    display: none;
+}
+#films.active{
+    display:flex;
+    width: 100%;
+}
+#main{
+    display: none;
+}
+#main.active{
+    display: block;
+    width: 100%;
+}
+.row{
+    display: flex;
+    width: 100%;
+}
+#cartoon{
+    display: none;
+}
+#cartoon.active{
+    display: block;
+    width: 100%;
+}
+#series{
+    display: none;
+}
+#series.active{
+    display: block;
+    width: 100%;
+}
+.item{
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+.item_pic{
+    display: block;
+    margin: 15px auto;
+    width: 85%;
+    height: 20%;
+    transition: 2s;
+}
+.item_text{
+    display: none;
+    transition: 2s;
+}
+.item_pic:hover{
+    filter: brightness(50%);
+    transform: scale(1.125);
+}
+.item_pic:hover + .item_text{
+    display: block;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    font-family: BebasNeue;
+    font-size: 50px;
+    color: aliceblue;
+}
