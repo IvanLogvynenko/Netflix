@@ -89,14 +89,14 @@ body{
 }
 .item_pic:hover{
     filter: brightness(50%);
-    transform: scale(1.125);
 }
 .item_pic:hover + .item_text{
     display: block;
     position: absolute;
-    margin: auto;
     z-index: 2;
+    bottom: 5%;
+    right: calc(25px + 10%);
     font-family: BebasNeue;
-    font-size: 50px;
+    font-size: 25px;
     color: aliceblue;
 }
