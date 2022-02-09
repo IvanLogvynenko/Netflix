@@ -90,18 +90,15 @@ body{
 .item_pic:hover{
     filter: brightness(25%);
 }
-.item_pic:hover + .item_text{
+.item_pic:hover + .div_text{
     display: block;
     position: absolute;
     z-index: 2;
     bottom: 5%;
-    left: 24px; 
-    right: 24px;
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 100px;
+    width: 80%;
+    left: calc(24px + 10%);
     font-family: BebasNeue;
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: 5px;
     color: aliceblue;
-    letter-spacing: 5px; 
 }
