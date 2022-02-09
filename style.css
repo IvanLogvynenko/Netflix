@@ -55,14 +55,14 @@ body{
 }
 #nav.active{
     display:inline-block;
-    background-color: gray;
+    background-color: rgb(40, 40, 40);
     opacity: 1;
     width: 100%;
     border-radius: 0 0 50px 50px;
 }
 .nav_item{
     font-family: BebasNeue;
-    color: rgb(189, 3, 3);
+    color: rgb(200, 0, 0);
     font-size: 20px;
     margin: auto;
     width: 20%;
