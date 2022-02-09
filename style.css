@@ -95,9 +95,13 @@ body{
     position: absolute;
     z-index: 2;
     bottom: 5%;
-    right: calc(25px + 10%);
+    left: 24px; 
+    right: 24px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px;
     font-family: BebasNeue;
     font-size: 25px;
     color: aliceblue;
-    letter-spacing: 5px;
+    letter-spacing: 5px; 
 }
