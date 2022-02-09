@@ -88,7 +88,7 @@ body{
     transition: 2s;
 }
 .item_pic:hover{
-    filter: brightness(50%);
+    filter: brightness(25%);
 }
 .item_pic:hover + .item_text{
     display: block;
@@ -99,4 +99,5 @@ body{
     font-family: BebasNeue;
     font-size: 25px;
     color: aliceblue;
+    letter-spacing: 5px;
 }
