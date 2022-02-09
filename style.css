@@ -11,6 +11,14 @@ body{
 .menu{
     display: none;
 }
+.menu.active{
+    display: block;
+    position: absolute;
+    opacity: 1;
+    z-index: 3;
+    left: 10%;
+    top: 45%;
+}
 .redLine{
     width: 60px;
     height: 10px;
@@ -19,14 +27,6 @@ body{
 .transparentLine{
     width: 60px;
     height: 10px;
-}
-.menu.active{
-    display: block;
-    position: absolute;
-    opacity: 2;
-    z-index: 3;
-    left: 10%;
-    top: 45%;
 }
 .picture{
     display: block;
@@ -37,6 +37,7 @@ body{
 .picture.active{
     width: 50%;
     opacity: 0.75;
+    height: 100%;
 }
 .header{
     position: fixed;
@@ -48,6 +49,25 @@ body{
 .header.active{
     opacity: 0.75;
     z-index: 10;
+}
+#nav{
+    display: none;
+}
+#nav.active{
+    display:inline-block;
+    background-color: gray;
+    opacity: 1;
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+}
+.nav_item{
+    font-family: BebasNeue;
+    color: rgb(189, 3, 3);
+    font-size: 20px;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    letter-spacing: 2px;
 }
 #spacer{
     display: block;
@@ -82,27 +102,27 @@ body{
         margin-top:0%;
     }
 }
+#mains{
+    display: none;
+    animation: entering_anim 1s;
+}
+#mains.active{
+    display: block;
+    width: 100%;
+}
 #films{
     display: none;
     animation: entering_anim 1s;
 }
 #films.active{
-    display:flex;
+    display:block;
     width: 100%;
 }
-#main{
+#cartoons{
     display: none;
     animation: entering_anim 1s;
 }
-#main.active{
-    display: block;
-    width: 100%;
-}
-#cartoon{
-    display: none;
-    animation: entering_anim 1s;
-}
-#cartoon.active{
+#cartoons.active{
     display: block;
     width: 100%;
 }
@@ -124,21 +144,21 @@ body{
     display: block;
     position: relative;
 }
-.item_pic{
+.pic{
     display: block;
     margin: 15px auto;
     width: 85%;
     height: 20%;
     transition: 1s;
 }
-.item_text{
+.description{
     display: none;
     transition: 1s;
 }
-.item_pic:hover{
+.pic:hover{
     filter: brightness(25%);
 }
-.item_pic:hover + .item_text{
+.pic:hover + .description{
     display: block;
     position: absolute;
     z-index: 2;
@@ -149,4 +169,18 @@ body{
     font-size: 30px;
     letter-spacing: 5px;
     color: aliceblue;
+}
+#abouts{
+    display: none;
+}
+#abouts.active{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.author_text{
+    font-family: BebasNeue;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: red;
 }
