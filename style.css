@@ -8,6 +8,9 @@ body{
     padding: 0;
     width: 100%;
 }
+.menu{
+    display: none;
+}
 .redLine{
     width: 60px;
     height: 10px;
@@ -16,6 +19,14 @@ body{
 .transparentLine{
     width: 60px;
     height: 10px;
+}
+.menu.active{
+    display: block;
+    position: absolute;
+    opacity: 2;
+    z-index: 3;
+    left: 10%;
+    top: 45%;
 }
 .picture{
     display: block;
@@ -31,6 +42,7 @@ body{
     position: fixed;
     width: 100%;
     top: 0;
+    height: 250px;
     background-color: black;
 }
 .header.active{
@@ -62,8 +74,17 @@ body{
     text-align: center;
     border-radius: 75px;
 }
+@keyframes entering_anim {
+    0%{
+        margin-top: 100%;
+    }
+    100%{
+        margin-top:0%;
+    }
+}
 #films{
     display: none;
+    animation: entering_anim 1s;
 }
 #films.active{
     display:flex;
@@ -71,17 +92,15 @@ body{
 }
 #main{
     display: none;
+    animation: entering_anim 1s;
 }
 #main.active{
     display: block;
     width: 100%;
 }
-.row{
-    display: flex;
-    width: 100%;
-}
 #cartoon{
     display: none;
+    animation: entering_anim 1s;
 }
 #cartoon.active{
     display: block;
@@ -89,9 +108,14 @@ body{
 }
 #series{
     display: none;
+    animation: entering_anim 1s;
 }
 #series.active{
     display: block;
+    width: 100%;
+}
+.row{
+    display: flex;
     width: 100%;
 }
 .item{
@@ -125,15 +149,4 @@ body{
     font-size: 30px;
     letter-spacing: 5px;
     color: aliceblue;
-}
-.menu{
-    display: none;
-}
-.menu.active{
-    display: block;
-    position: absolute;
-    opacity: 2;
-    z-index: 3;
-    left: 10%;
-    top: 45%;
 }

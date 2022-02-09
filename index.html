@@ -16,6 +16,23 @@
         	<img class="picture" src="pics/main.png">
 		</div>
 		<div id="spacer"></div>
+		<div id="nav">
+			<div class="nav_item">
+				<h2>Main page</h2>
+			</div>
+			<div class="nav_item">
+				<h2></h2>
+			</div>
+			<div class="nav_item">
+				<h2></h2>
+			</div>
+			<div class="nav_item">
+				<h2></h2>
+			</div>
+			<div class="nav_item">
+				<h2></h2>
+			</div>
+		</div>
         <div id="starter">
             <h1 class="starter_text">Start</h1>
         </div>
@@ -234,6 +251,7 @@
 			var menu = document.getElementsByClassName("menu")[0];
 			var spacer = document.getElementById("spacer");
 			var header = document.getElementsByClassName("header")[0];
+			var menu = document.getElementsByClassName("menu")[0];
             starter.addEventListener('click',
             function(){
 				header.classList.toggle("active");
@@ -243,6 +261,10 @@
 				main.classList.toggle("active");
 				menu.classList.toggle("active");
             })
+			menu.addEventListener('click',
+			function(){
+
+			})
 		</script>
     </body>
 </html>
