@@ -5,8 +5,17 @@
         <link rel="stylesheet" href="style.css" media='(max-width: 1024px)'>
     </head>
     <body>
-		<img class="menu" src="pics/menu.png">
-        <img class="picture" src="pics/main.png">
+		<div class="header">
+			<div class="menu">
+				<div class="redLine"></div>
+				<div class="transparentLine"></div>
+				<div class="redLine"></div>
+				<div class="transparentLine"></div>
+				<div class="redLine"></div>
+			</div>
+        	<img class="picture" src="pics/main.png">
+		</div>
+		<div id="spacer"></div>
         <div id="starter">
             <h1 class="starter_text">Start</h1>
         </div>
@@ -222,11 +231,17 @@
             var head = document.getElementsByClassName("picture")[0];
             var starter = document.getElementById("starter");
 			var main = document.getElementById("main");
+			var menu = document.getElementsByClassName("menu")[0];
+			var spacer = document.getElementById("spacer");
+			var header = document.getElementsByClassName("header")[0];
             starter.addEventListener('click',
             function(){
+				header.classList.toggle("active");
+				spacer.classList.toggle("active");
                 head.classList.toggle("active");
                 starter.classList.toggle("display");
 				main.classList.toggle("active");
+				menu.classList.toggle("active");
             })
 		</script>
     </body>
