@@ -34,6 +34,7 @@ function(){
 	films.classList.remove("active");
 	cartoons.classList.remove("active");
 	series.classList.remove("active");
+	abouts.classList.remove("active");
 })
 film.addEventListener('click',
 function(){
@@ -42,6 +43,7 @@ function(){
 	films.classList.toggle("active");
 	cartoons.classList.remove("active");
 	series.classList.remove("active");
+	abouts.classList.remove("active");
 })
 cartoon.addEventListener('click',
 function(){
@@ -50,6 +52,7 @@ function(){
 	films.classList.remove("active");
 	cartoons.classList.toggle("active");
 	series.classList.remove("active");
+	abouts.classList.remove("active");
 })
 serie.addEventListener('click',
 function(){
@@ -58,6 +61,7 @@ function(){
 	films.classList.remove("active");
 	cartoons.classList.remove("active");
 	series.classList.toggle("active");
+	abouts.classList.remove("active");
 })
 about.addEventListener('click',
 function(){
