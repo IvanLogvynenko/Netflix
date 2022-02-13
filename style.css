@@ -60,6 +60,14 @@ body{
     width: 100%;
     border-radius: 0 0 50px 50px;
 }
+@keyframes nav_item_anim{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .nav_item{
     font-family: BebasNeue;
     color: rgb(200, 0, 0);
@@ -68,6 +76,7 @@ body{
     width: 20%;
     text-align: center;
     letter-spacing: 2px;
+    animation: nav_item_anim 1s;
 }
 #spacer{
     display: block;
@@ -150,6 +159,7 @@ body{
     width: 85%;
     height: 20%;
     transition: 1s;
+    object-fit: fill;
 }
 .description{
     display: none;
